@@ -20,6 +20,28 @@ body{
     font-size: 22px;
 }
 
+.about{
+    padding: 25px;
+    margin: 25px;
+
+    &__header{
+        font-family: $heading-font-family;
+        color: $purple;
+        font-size: 52px;
+        margin: 25px;
+        
+    }
+
+    &__text{
+        font-size: 22px;
+        color: white;
+        background-color: $purple;
+        max-width: 50%;
+        padding: 25px;
+        border-radius: 25px;
+    }
+}
+
 .education{
     padding: 25px;
     margin: 25px;

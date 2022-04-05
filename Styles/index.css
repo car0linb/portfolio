@@ -344,6 +344,25 @@ body {
   font-size: 22px;
 }
 
+.about {
+  padding: 25px;
+  margin: 25px;
+}
+.about__header {
+  font-family: "Fredericka the Great";
+  color: #CB9897;
+  font-size: 52px;
+  margin: 25px;
+}
+.about__text {
+  font-size: 22px;
+  color: white;
+  background-color: #CB9897;
+  max-width: 50%;
+  padding: 25px;
+  border-radius: 25px;
+}
+
 .education {
   padding: 25px;
   margin: 25px;
