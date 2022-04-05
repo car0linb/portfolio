@@ -1,6 +1,7 @@
 .passion{
     padding: 25px;
     margin: 25px;
+    
 
     &__heading{
         font-family: $body-font-family;
@@ -14,8 +15,8 @@
         flex-wrap: wrap;
         justify-content: center;
 
-    figure{
-        width:25%;
+     figure{
+        width:20%;
         margin: 15px;
         border: 1px solid #bfbfbf;
         box-sizing: border-box;
@@ -33,12 +34,24 @@
             padding: 8px 4px;
         }
     }
+  
+    @keyframes imagescale{
+        0% {transform: scale(1);}
+        50% {transform: scale(1.2);}
+        100% {transform: scale(1);}
+    }
 
     figure:hover{
-        transform: scale(1.1);
+        animation: imagescale 3s ease infinite;
         opacity: 0.8;
     }
 
+    .rotate_right{
+        transform: rotate(8deg)
     }
 
+    .rotate_left{
+        transform: rotate(-8deg);
+    }
+    }
 }

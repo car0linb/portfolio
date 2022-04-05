@@ -1,0 +1,19 @@
+.btn{
+    background-color: $purple;
+    max-width: 250px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 40px;
+    color: white;
+    font-size: 22px;
+    // text-transform: uppercase;
+
+
+}
+
+.btn:hover{
+    background-color: $darkpurple;
+    color: white;
+    box-shadow: 0 4px 8px 0;
+    transition: all 1s ease-in-out;
+}

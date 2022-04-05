@@ -3,10 +3,14 @@
 
 nav{
     min-height: 10vh;
+    width: 100%;
     background-color: $pink;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 
     ul{
         display: flex;
@@ -34,24 +38,37 @@ nav{
         }
     }   
 
-    form{
+    .nav__form{
         margin-left: auto;
         margin-right: 25px;
         padding: 5px;
         background-color: $coral;
         border-radius: 15px;
         font-size: 20px;
+        display: flex;
+        align-items: center;
+
     }
+
+   
+
+}
+
+.nav__btn{
+   
+    font-family: $body-font-family;
+    padding: 5px;
 }
 
 
+
 @media screen and (max-width: 800px) {
-    li {
+    nav li {
         display: none;
         justify-content: flex-start;
     }
 
-    form{
+    nav form{
         display: none;
     }
 

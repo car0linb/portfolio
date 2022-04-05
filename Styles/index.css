@@ -1,68 +1,25 @@
-nav {
-  min-height: 10vh;
-  background-color: #FFCCBB;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-nav ul li {
-  margin: 20px;
-  list-style: none;
-}
-nav ul li a {
-  text-decoration: none;
+.btn {
+  background-color: #CB9897;
+  max-width: 250px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 40px;
+  color: white;
   font-size: 22px;
-  color: #F78D7D;
-}
-nav ul li a:hover {
-  color: #9BB9C3;
-}
-nav ul li .bars {
-  display: none;
-}
-nav form {
-  margin-left: auto;
-  margin-right: 25px;
-  padding: 5px;
-  background-color: #F78D7D;
-  border-radius: 15px;
-  font-size: 20px;
 }
 
-@media screen and (max-width: 800px) {
-  li {
-    display: none;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-
-  form {
-    display: none;
-  }
-
-  .icon {
-    display: block;
-  }
+.btn:hover {
+  background-color: #947481;
+  color: white;
+  -webkit-box-shadow: 0 4px 8px 0;
+          box-shadow: 0 4px 8px 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
+
 header {
+  margin: 25px;
+  padding: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,11 +33,23 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #FFCCBB;
 }
-header img {
+header .hi__header {
+  max-width: 100%;
+  max-height: 50vh;
+  overflow: hidden;
+}
+header .hi__header img {
+  width: 100%;
+}
+header figure {
   width: 25%;
-  border-radius: 15% 35%;
-  margin: 25px;
+  margin: -20% 25px 25px;
+}
+header figure p img {
+  width: 100%;
+  border-radius: 50%;
 }
 header .hi__quote {
   -ms-flex-item-align: end;
@@ -91,11 +60,12 @@ header .hi__quote {
 .hi__logo {
   margin: 25px;
   font-family: "Homemade Apple", cursive;
-  font-size: 72px;
+  font-size: 52px;
 }
 
 nav {
   min-height: 10vh;
+  width: 100%;
   background-color: #FFCCBB;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,6 +76,9 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 nav ul {
@@ -139,24 +112,35 @@ nav ul li .bars {
   display: none;
 }
 
-nav form {
+nav .nav__form {
   margin-left: auto;
   margin-right: 25px;
   padding: 5px;
   background-color: #F78D7D;
   border-radius: 15px;
   font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__btn {
+  font-family: "Nothing You Could Do", cursive;
+  padding: 5px;
 }
 
 @media screen and (max-width: 800px) {
-  li {
+  nav li {
     display: none;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
 
-  form {
+  nav form {
     display: none;
   }
 
@@ -199,7 +183,7 @@ nav form {
           justify-content: center;
 }
 .passion__gallery figure {
-  width: 25%;
+  width: 20%;
   margin: 15px;
   border: 1px solid #bfbfbf;
   -webkit-box-sizing: border-box;
@@ -217,12 +201,127 @@ nav form {
   text-align: center;
   padding: 8px 4px;
 }
+@-webkit-keyframes imagescale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes imagescale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 .passion__gallery figure:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-animation: imagescale 3s ease infinite;
+          animation: imagescale 3s ease infinite;
   opacity: 0.8;
 }
+.passion__gallery .rotate_right {
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+}
+.passion__gallery .rotate_left {
+  -webkit-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+}
 
+nav {
+  min-height: 10vh;
+  width: 100%;
+  background-color: #FFCCBB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav ul li {
+  margin: 20px;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #F78D7D;
+}
+nav ul li a:hover {
+  color: #9BB9C3;
+}
+nav ul li .bars {
+  display: none;
+}
+nav .nav__form {
+  margin-left: auto;
+  margin-right: 25px;
+  padding: 5px;
+  background-color: #F78D7D;
+  border-radius: 15px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__btn {
+  font-family: "Nothing You Could Do", cursive;
+  padding: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  nav li {
+    display: none;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  nav form {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+  }
+}
 html {
   background-color: #FFCCBB;
 }

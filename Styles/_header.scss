@@ -2,29 +2,48 @@
 
 header{
 
+    margin: 25px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $pink;
+
+    .hi__header{
+        max-width: 100%;
+        max-height: 50vh;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+        }
+    }
     
-    img{
+    figure{
         width: 25%;
-        border-radius: 15% 35%;
-        margin: 25px;
+        margin: -20% 25px 25px;p
+ 
+        img{
+            width: 100%;
+            border-radius: 50%;
+        }
     }
 
-.hi__quote{
-    align-self: flex-end;
-    margin: 25px;
-}
+    
+
+    .hi__quote{
+        align-self: flex-end;
+        margin: 25px;
+    }
 
 }
 
 .hi__logo{
     margin: 25px;
     font-family: $apple-font-family;
-    font-size: 72px;
-    // font-weight: 500;
+    font-size: 52px;
+    
 
     // &--caroline{
     //     margin: 25px;
