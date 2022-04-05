@@ -1,3 +1,36 @@
+@import "fonts";
+
 header{
-    background-color: peachpuff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    img{
+        width: 25%;
+        border-radius: 15% 35%;
+        margin: 25px;
+    }
+
+.hi__quote{
+    align-self: flex-end;
+    margin: 25px;
+}
+
+}
+
+.hi__logo{
+    margin: 25px;
+    font-family: $apple-font-family;
+    font-size: 72px;
+    // font-weight: 500;
+
+    // &--caroline{
+    //     margin: 25px;
+    //     transform: rotate(270deg);
+    // }
+
+  
+    
 }

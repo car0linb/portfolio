@@ -1,0 +1,62 @@
+@import "colors";
+@import "fonts";
+
+nav{
+    min-height: 10vh;
+    background-color: $pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li{
+            margin: 20px;
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                font-size: 22px;
+                color: $coral;
+            }
+
+            a:hover{
+                color: $blue;
+            }
+
+            .bars{
+                display:none;
+            }
+            
+        }
+    }   
+
+    form{
+        margin-left: auto;
+        margin-right: 25px;
+        padding: 5px;
+        background-color: $coral;
+        border-radius: 15px;
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    li {
+        display: none;
+        justify-content: flex-start;
+    }
+
+    form{
+        display: none;
+    }
+
+    .icon{
+        display:block;
+      }
+    
+  }

@@ -1,7 +1,330 @@
+nav {
+  min-height: 10vh;
+  background-color: #FFCCBB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav ul li {
+  margin: 20px;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #F78D7D;
+}
+nav ul li a:hover {
+  color: #9BB9C3;
+}
+nav ul li .bars {
+  display: none;
+}
+nav form {
+  margin-left: auto;
+  margin-right: 25px;
+  padding: 5px;
+  background-color: #F78D7D;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  li {
+    display: none;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  form {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+  }
+}
 header {
-  background-color: peachpuff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header img {
+  width: 25%;
+  border-radius: 15% 35%;
+  margin: 25px;
+}
+header .hi__quote {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 25px;
+}
+
+.hi__logo {
+  margin: 25px;
+  font-family: "Homemade Apple", cursive;
+  font-size: 72px;
+}
+
+nav {
+  min-height: 10vh;
+  background-color: #FFCCBB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav ul li {
+  margin: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #F78D7D;
+}
+
+nav ul li a:hover {
+  color: #9BB9C3;
+}
+
+nav ul li .bars {
+  display: none;
+}
+
+nav form {
+  margin-left: auto;
+  margin-right: 25px;
+  padding: 5px;
+  background-color: #F78D7D;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  li {
+    display: none;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  form {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+  }
+}
+.coding, .psychology, .teaching {
+  background-color: white;
+}
+.coding h1, .psychology h1, .teaching h1 {
+  font-family: "Fredericka the Great";
+  color: #CB9897;
+}
+.coding .icon, .psychology .icon, .teaching .icon {
+  font-size: 72px;
+  margin: 25px;
+  color: #FFCCBB;
+  text-align: center;
+}
+
+.passion {
+  padding: 25px;
+  margin: 25px;
+}
+.passion__heading {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 52px;
+  margin: 25px;
+  padding: 15px;
+}
+.passion__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.passion__gallery figure {
+  width: 25%;
+  margin: 15px;
+  border: 1px solid #bfbfbf;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 8px;
+  -webkit-box-shadow: 10px 10px 5px #aaaaaa;
+          box-shadow: 10px 10px 5px #aaaaaa;
+  background-color: white;
+}
+.passion__gallery figure img {
+  width: 100%;
+}
+.passion__gallery figure figcaption {
+  font-family: "Nothing You Could Do", cursive;
+  text-align: center;
+  padding: 8px 4px;
+}
+.passion__gallery figure:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.8;
 }
 
 html {
   background-color: #FFCCBB;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1600px;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22px;
+}
+
+.education {
+  padding: 25px;
+  margin: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.education__content {
+  padding: 25px;
+  margin: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.education__icon {
+  text-align: center;
+}
+.education a {
+  text-decoration: none;
+  color: #FFCCBB;
+}
+.education a:hover {
+  color: #9BB9C3;
+}
+.education .icon {
+  font-size: 72px;
+  margin: 25px;
+  color: #FFCCBB;
+}
+.education .icon:hover {
+  color: #9BB9C3;
+}
+.education__heading {
+  font-family: "Fredericka the Great";
+  color: #CB9897;
+  font-size: 52px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.skills {
+  padding: 25px;
+  margin: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.skills__heading {
+  font-family: "Fredericka the Great";
+  color: #CB9897;
+  font-size: 52px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 15px;
+}
+.skills ul {
+  padding: 15px;
+}
+.skills li {
+  list-style: circle;
+}
+.skills h3 {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 35px;
+  margin: 15px;
+}
+.skills__computer, .skills__other {
+  margin: 25px;
+  padding: 25px;
+  width: 30%;
+  border-radius: 25px;
+  background-color: #CB9897;
+  color: white;
 }

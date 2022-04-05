@@ -1,12 +1,115 @@
-@import "header";
+
 @import "colors";
 @import "fonts";
+@import "nav";
+@import "header";
+@import "education";
+@import "passion";
+
 
 html{
     background-color: $pink;
 }
 
-// body{
-//     max-width: 1600px;
-//     width: 100%;
-// }
+body{
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 100%;
+    font-family: $josefin;
+    font-size: 22px;
+}
+
+.education{
+    padding: 25px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    
+   
+
+    &__content{
+        padding: 25px;
+        margin: 25px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__icon{
+        text-align: center;
+        
+     }
+
+     a{
+         text-decoration: none;
+         color: $pink;
+     }
+
+     a:hover{
+         color: $blue;
+     }
+
+     .icon{
+        font-size: 72px;
+        margin: 25px;
+        color: $pink;
+    }
+
+    .icon:hover{
+        color: $blue;
+    }
+
+    &__heading{
+        font-family: $heading-font-family;
+        color: $purple;
+        font-size: 52px;
+        align-self: center;
+    }
+
+}
+
+.skills{
+    padding: 25px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__heading{
+        font-family: $heading-font-family;
+        color: $purple;
+        font-size: 52px;
+        align-self: center;
+        margin: 15px;
+    }
+
+    ul{
+        padding: 15px;
+    }
+
+    li{
+        list-style:circle;
+    }
+    
+    h3{
+        font-family: $body-font-family;
+        font-size: 35px;
+        margin: 15px;
+    }
+
+    &__computer, &__other{
+
+        margin: 25px;
+        padding: 25px;
+        width: 30%;
+        border-radius: 25px;
+        background-color: $purple;
+        color: white;
+    }
+
+}
+
+
+
+
+

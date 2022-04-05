@@ -1,0 +1,44 @@
+.passion{
+    padding: 25px;
+    margin: 25px;
+
+    &__heading{
+        font-family: $body-font-family;
+        font-size: 52px;
+        margin: 25px;
+        padding: 15px;
+    }
+
+    &__gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    figure{
+        width:25%;
+        margin: 15px;
+        border: 1px solid #bfbfbf;
+        box-sizing: border-box;
+        padding: 8px;
+        box-shadow: 10px 10px 5px #aaaaaa;
+        background-color: white;
+
+        img{
+            width: 100%;
+        }
+
+        figcaption{
+            font-family: $body-font-family;
+            text-align: center;
+            padding: 8px 4px;
+        }
+    }
+
+    figure:hover{
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+
+    }
+
+}
