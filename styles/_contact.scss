@@ -1,0 +1,27 @@
+.contact{
+    background-image: url(../Images/Polaroids/clouds.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .form__container{
+        max-width: 50%;
+        min-height: 50%;
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px;
+        margin: 25px;
+        display: flex;
+        flex-direction: column;
+
+        input{
+            margin: 15px;
+            padding: 5px;
+            border-radius: 15px;
+        }
+    }
+}

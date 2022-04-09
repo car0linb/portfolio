@@ -29,7 +29,7 @@
         <nav >
             <ul class="topnav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#about">About</a></li>
                 <!-- <li><a href="#">Experience</a></li> -->
                 <li><a href="#">Work</a></li>
                 <li><a href="#">Testimonials</a></li>
@@ -99,7 +99,7 @@
         </div>
     </header>
     <main>
-        <section class="container-fluid about">
+        <section class="container-fluid about" id="about">
             <div class="about__header">
                 <h2>About Me</h2>
             </div>
@@ -227,8 +227,9 @@
         </section>
 
         <section class="contact" id="contact">
-            <h2>Contact</h2>
+            
             <form action="" class="form__container">
+                <h2>Contact</h2>
                 <label for="name">Your Name:</label>
                 <input type="text" name="name" id="name" placeholder="Name" required>
 
@@ -238,10 +239,10 @@
                 <label for="message">Message:</label>
                 <input type="textarea" name="message" id="message" rows="3" column>
 
-                
-                <button type="reset" class="btn">Reset</button>
-                <button type="submit" class="btn">Submit</button>
-
+                <div>
+                    <button type="reset" class="btn">Reset</button>
+                    <button type="submit" class="btn">Submit</button>
+                </div>
             </form>
 
 
