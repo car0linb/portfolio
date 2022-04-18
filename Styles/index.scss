@@ -6,6 +6,7 @@
 @import "education";
 @import "passion";
 @import "contact";
+@import "footer";
 @import "nav";
 
 
@@ -20,6 +21,14 @@ body{
     width: 100%;
     font-family: $josefin;
     font-size: 22px;
+}
+
+.hi__text{
+    margin: 25px;
+    padding: 25px;
+    font-size: 42px;
+    align-self: flex-start;
+    font-family: $body-font-family;
 }
 
 .about{

@@ -30,7 +30,6 @@
             <ul class="topnav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <!-- <li><a href="#">Experience</a></li> -->
                 <li><a href="#">Work</a></li>
                 <li><a href="#">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -55,50 +54,45 @@
         </figure>
         
 
-        <div class="hi__quote">
+        <!-- <div class="hi__quote">
             <i class="fa-solid fa-horizontal-rule"></i>
             <p>Trust the process</p>
-        </div>
+        </div> -->
 
 
 
         <div class="hi__logo">
-              <!--
-        I'm Caroline" bold font in square that rotates slowly-->
-            <div class="hi__logo--hello">
+            <div class="hi__logo--hello text-center">
                 <h2>Hello</h2>
-            </div>
-            <!-- <div class="hi__logo--welcome">
-                <h3>Welcome</h3>
-            </div> -->
-            <div class="hi__logo--im">
                 <h2>I'm</h2>
-            </div>
-            <div class="hi__logo--caroline">
                 <h2>Caroline</h2>
             </div>
         </div>
 
         <div>
-            <a href="#" class="btn">Say Hi on LinkedIn</a>
+            <a href="https://www.linkedin.com/in/caroline-briggman-b22369231/" class="btn">Say Hi on LinkedIn</a>
         </div>
         
-        <div class="hi__text">
-        <h2 >
-            Welcome to my portfolio!
-        </h2>
-        <h3>Please have a look around.
-        </h3>
-        <h3>
-            Hope you enjoy!
-        </h3>
-        <h4>
-            Please <a href="#contact">get in touch</a>, I'll be glad to hear from you!
-        </h4>
-      
-        </div>
     </header>
+       
+    
     <main>
+        <section class="welcome">
+            <div class="hi__text text-center">
+                <h2 >
+                    Welcome to my portfolio!
+                </h2>
+                <h3>Please have a look around.
+                </h3>
+                <h3>
+                    Hope you enjoy!
+                </h3>
+                <h4>
+                    Please <a href="#contact">get in touch</a>, I'll be glad to hear from you!
+                </h4>
+              
+                </div>
+        </section>
         <section class="container-fluid about" id="about">
             <div class="about__header">
                 <h2>About Me</h2>
@@ -172,6 +166,18 @@
                 </ul>
             </div>
         </section>
+        <section class="container-fluid Work">
+            <h2>Work</h2>
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">Example</div>
+                </div>
+            </div>
+
+
+        </section>
+
         <section class="container-fluid passion">
             <!--polaroids 9 turns into thumbnails on small screen-->
 
@@ -218,12 +224,6 @@
                     <figcaption>More Plants</figcaption>
                 </figure> -->
             </div>
-
-
-
-
-
-
         </section>
 
         <section class="contact" id="contact">
@@ -250,11 +250,20 @@
 
     </main>
     <footer class="container-fluid py-5">
-        <!--Social Media links-->
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
 
-        <h6>Built by Caroline Briggman 2022</h6>
+        <div class="top">
+            <a href="#">Go to Top</a>
+        </div>
+
+        <!--Social Media links-->
+        <div class="links">
+            <a href="https://www.linkedin.com/in/caroline-briggman-b22369231/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+        <div class="built">
+            <h6>Built by Caroline Briggman 2022</h6>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
